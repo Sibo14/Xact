@@ -29,7 +29,7 @@ namespace Xact
             if (tbAccount.Text != "")
             {
 
-                string query = "Select name, dm.address1, smf.Stock_Description, dtf.Transaction_Type from Debtors_Master dm, INVOICE_HEADER ih, STOCK_MASTER_FILE smf, INVOICE_DETAIL id, DEBTORS_TRANSACTION_FILE dtf" +
+                string query = "Select name, dm.address1, smf.Stock_Description, dtf.Transaction_Type,dtf.Date from Debtors_Master dm, INVOICE_HEADER ih, STOCK_MASTER_FILE smf, INVOICE_DETAIL id, DEBTORS_TRANSACTION_FILE dtf" +
                     " where dm.Account_Code = @Account_Code AND smf.Stock_Code = id.Stock_Code AND id.Invoice_No = ih.Invoice_No AND dtf.Account_Code = dm.Account_Code";
 
                 SqlCommand cmd = new SqlCommand(query, sqlCon);
@@ -44,6 +44,7 @@ namespace Xact
                     lblAddress1.Content = da.GetValue(1).ToString();
                     label6.Content = da.GetValue(2).ToString();
                     lblTransaction.Content = da.GetValue(3).ToString();
+                    lblTransDate.Content = da.GetValue(4).ToString();
                 }
 
                 sqlCon.Close();
