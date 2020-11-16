@@ -68,5 +68,12 @@ namespace Xact
             main.Show();
             this.Close();
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            Invoice_Header main = new Invoice_Header();
+            main.Show();
+            this.Close();
+        }
     }
 }

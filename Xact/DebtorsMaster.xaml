@@ -19,6 +19,7 @@
         <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="333,370,0,0" VerticalAlignment="Top" Width="75" Click="btnCreate_Click"/>
         <Button x:Name="button" Content="Button" HorizontalAlignment="Left" Margin="476,375,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <Button x:Name="button1" Content="Debtors transaction" HorizontalAlignment="Left" Margin="615,375,0,0" VerticalAlignment="Top" Width="114" Click="button1_Click"/>
+        <Button x:Name="button2" Content="Invoice" HorizontalAlignment="Left" Margin="615,327,0,0" VerticalAlignment="Top" Width="114" Height="22" Click="button2_Click"/>
 
 
     </Grid>

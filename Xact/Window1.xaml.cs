@@ -40,7 +40,11 @@ namespace Xact
 
 
             //insertition of data into database
-            string query = " Insert into STOCK_MASTER_FILE ([Stock_Description],[Cost],[Selling_Price],[Qty_Purchased],[Qty_Sold],[Stock_On_Hand]) Values ('" + tbStockDesc.Text + "','" + Decimal.Parse(tbCost.Text) + "','"+ Decimal.Parse(tbSelling.Text)+"','" + int.Parse(tbPurch.Text) + "','" + int.Parse(tbSold.Text) + "','"+ int.Parse(tbStock.Text) + "')";
+            string query = " Insert into STOCK_MASTER_FILE ([Stock_Description],[Cost],[Selling_Price],[Qty_Purchased]) Values ('" + tbStockDesc.Text + "','" + Decimal.Parse(tbCost.Text) + "','"+ Decimal.Parse(tbSelling.Text)+"','" + int.Parse(tbPurch.Text) + "','" + int.Parse(tbSold.Text) + "')";
+
+            //logic for calculations
+            string query1 = "SELECT Qty_Purchased*Cost AS Total_Purchases_Excl_Vat , Qty_Purchased-Qty_Sold AS Stock_On_Hand, Qty_Sold*Selling_Price AS Total_Sales_Excl_Vat  FROM STOCK_MASTER_FILE";
+
             SqlCommand sqlCmd = new SqlCommand(query, sqlCon);
             sqlCmd.ExecuteNonQuery();
 
