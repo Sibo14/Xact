@@ -54,7 +54,7 @@ namespace Xact
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            //open new window
+            //open new window to next page
             Window2 main = new Window2();
             main.Show();
             this.Close();
