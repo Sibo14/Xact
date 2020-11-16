@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xact", "Xact\Xact.csproj", "{813C64A8-640F-4179-90B0-8A2A0D560CBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{5432D609-EBF2-4429-9CC9-5053E5BF822B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{813C64A8-640F-4179-90B0-8A2A0D560CBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{813C64A8-640F-4179-90B0-8A2A0D560CBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{813C64A8-640F-4179-90B0-8A2A0D560CBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{813C64A8-640F-4179-90B0-8A2A0D560CBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5432D609-EBF2-4429-9CC9-5053E5BF822B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5432D609-EBF2-4429-9CC9-5053E5BF822B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5432D609-EBF2-4429-9CC9-5053E5BF822B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5432D609-EBF2-4429-9CC9-5053E5BF822B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D57C2729-9562-4E43-8F03-B383BBD061FE}
+	EndGlobalSection
+EndGlobal
