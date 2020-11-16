@@ -17,13 +17,13 @@ using System.Windows.Shapes;
 namespace Xact
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for StockMaster.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class StockMaster : Window
     {
 
         string connectionString = ConfigurationManager.ConnectionStrings["TestString"].ConnectionString;
-        public Window1()
+        public StockMaster()
         {
             InitializeComponent();
         }
@@ -49,7 +49,7 @@ namespace Xact
             sqlCmd.ExecuteNonQuery();
 
             //open new window
-            Window1 main = new Window1();
+            StockMaster main = new StockMaster();
             main.Show();
             this.Close();
 

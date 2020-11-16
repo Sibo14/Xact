@@ -47,7 +47,7 @@ namespace Xact
                 sqlCmd.ExecuteNonQuery();
 
                 //open new window
-               Window1 main = new Window1();
+               StockMaster main = new StockMaster();
                 main.Show();
                 this.Close();
            
@@ -56,7 +56,7 @@ namespace Xact
         private void button_Click(object sender, RoutedEventArgs e)
         {
             //open new window
-            Window1 main = new Window1();
+            StockMaster main = new StockMaster();
             main.Show();
             this.Close();
         }
